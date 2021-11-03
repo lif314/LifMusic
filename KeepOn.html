@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lif Music</title>
+    <!-- CSS 资源文件 -->
+    <link type="text/css" href="css/imagebox.css" rel="stylesheet" />
+    <link type="text/css" href="css/music.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+    <!-- font-awesome 图标字体 http://www.fontawesome.com.cn/faicons/#web-application -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- 相册框 -->
+    <div class="box">
+        <ul class="minbox">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ol class="maxbox">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+
+    <!-- 音乐播放 -->
+    <section class="container">
+
+        <div id="player">
+            <audio id="audio"></audio>
+
+            <!-- 列表信息 -->
+            <div class="caratula">
+                <img src="https://4.bp.blogspot.com/_NsAexvbcSn0/ST20kHuQRSI/AAAAAAAAA8s/Y3G2PNLdKdU/s400/Teleradio_cover.jpg">
+                <div class="more">
+                    <div class="icon-info"></div>
+                </div>
+
+                <div id="tiempo" class="bio">
+                    <h2>歌曲列表</h2>
+                    <div id="list"></div>
+
+                </div>
+            </div>
+
+            <!-- 进度条 -->
+            <div class="time">
+                <div class="progress"></div>
+            </div>
+
+            <!-- 歌曲信息 -->
+            <div class="info">
+                <div class="love">
+                    <div class="icon-heart"></div>
+                    <div class="icon-star-empty"></div>
+                </div>
+                <div class="elapsed">4:00</div>
+                <!-- 歌曲名称 -->
+                <div id="screen" class="screen"></div>
+
+            </div>
+
+            <!-- 播放控制 -->
+            <div class="controls">
+                <ul>
+                    <li>
+                        <!-- 上一首 -->
+                        <div class="icon-backward btn" id="btn_backward" onClick="prev()"></div>
+                    </li>
+                    <li>
+                        <!-- 暂停 -->
+                        <div class="icon-pause btn" id="btn_pause" onClick="pause()"></div>
+                    </li>
+                    <li class="play">
+                        <!-- 播放 -->
+                        <div class="icon-play btn" id="btn_play" onClick="play()"></div>
+                    </li>
+                    <li>
+                        <!-- 停止 -->
+                        <div class="icon-stop btn" id="btn_stop" onClick="stop()"></div>
+                    </li>
+                    <li>
+                        <!-- 下一首 -->
+                        <div class="icon-forward btn" id="btn_forward" onclick="next()"></div>
+                    </li>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- js资源文件 -->
+    <script src="js/music.js"></script>
+</body>
+
+</html>
+
+</html>
